@@ -1,0 +1,44 @@
+# Google Trends Data Collector - Konfiguracja
+# Wszystkie pola są edytowalne
+
+# API Configuration
+serpapi_key: "your_api_key_here"  # Twój klucz SerpAPI (wymagany)
+
+# Keywords (obecnie wyłączone - zbieramy tylko trending searches)
+keywords: []  # Lista słów kluczowych do analizy interest over time (obecnie pusta - oszczędza zapytania API)
+
+# Regions Configuration
+regions:
+  - name: "Poland"        # Nazwa regionu (może być dowolna)
+    code: "PL"           # Kod kraju ISO (PL, US, DE, GB, FR, etc.)
+  - name: "United States" # Nazwa regionu
+    code: "US"           # Kod kraju ISO
+
+# Timeframe for interest over time (obecnie nieużywane)
+timeframe: "today 3-m"  # Zakres czasowy: "today 3-m", "today 12-m", "today 5-y", "all"
+
+# Output Configuration
+output_file: "trends_data.json"  # Nazwa pliku wyjściowego (będzie też utworzony _simple.json dla agenta AI)
+
+# Language and Timezone (opcjonalne)
+language: "en-US"   # Język interfejsu API
+timezone: 360       # Strefa czasowa (360 = UTC-6)
+
+# Trending Searches Configuration
+trending_searches:
+  enabled: true     # Czy zbierać trending searches (true/false)
+  count: 20        # Ile trendujących haseł pobrać (max 25)
+  hours: 24        # Ostatnie X godzin (nie jest obecnie używane przez SerpAPI)
+
+# Dodatkowe regiony do konfiguracji:
+# Popularne kody krajów:
+# PL - Polska
+# US - Stany Zjednoczone  
+# DE - Niemcy
+# GB - Wielka Brytania
+# FR - Francja
+# ES - Hiszpania
+# IT - Włochy
+# CA - Kanada
+# AU - Australia
+# JP - Japonia

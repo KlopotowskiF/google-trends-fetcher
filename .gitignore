@@ -1,0 +1,33 @@
+# Generated data files
+trends_data.json
+trends_data_simple.json
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code files
+.claude/
+
+# Config with secrets (uncomment if you want to hide API key)
+# config.yaml
